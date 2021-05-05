@@ -1,0 +1,132 @@
+    body {
+        background: black;
+        font-size: 1.2em;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    #principal {
+        margin-left: 850px;
+        margin-top: 50px;
+    }
+    
+    h2 {
+        margin-left: 400px;
+        clear: both;
+        color: whitesmoke;
+    }
+    
+    #modal {
+        max-width: 1000px;
+        height: 500px;
+        background: #757373;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #escritas {
+        padding: 30px;
+        margin-left: 10px;
+        display: inline-block;
+        color: white;
+        margin-top: -50px;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #elementos {
+        padding: 30px;
+        margin-left: 50px;
+        color: white;
+        margin-top: -50px;
+    }
+    
+    button,
+    input[type="button"] {
+        background: #B9B7BA;
+        color: white;
+        padding: 10px;
+        position: center;
+        margin-left: 350px;
+        border-radius: 12px;
+        width: 150px;
+        cursor: pointer;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        border: 2px solid white;
+        outline: none;
+    }
+    
+    #cadastro {
+        float: right;
+        margin-right: 50px;
+        display: inline-block;
+        padding: 30px;
+        margin-top: -160px;
+    }
+    
+    input {
+        border-radius: 20px;
+        padding: 7px;
+        border: none;
+        background-color: white;
+    }
+    
+    #imagem {
+        float: right;
+        display: inline-block;
+        margin-right: 50px;
+        margin-top: -100px;
+    }
+    
+    #p {
+        text-decoration: underline;
+        font-size: 0.8em;
+        color: aliceblue;
+        display: inline-block;
+        margin-left: 100px;
+    }
+    
+    #senha {
+        margin-left: 80px;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        max-width: 100;
+        margin-top: -20px;
+    }
+    
+    @media (max-width: 500px) {
+        #botao-entrar {
+            float: left;
+            margin-left: 10px;
+            margin-bottom: -200px;
+        }
+        #cadastro {
+            float: left;
+            margin-left: -300px;
+            display: inline-block;
+            padding: 30px;
+            margin-top: -160px;
+        }
+        #modal {
+            max-width: 1000px;
+            height: 800px;
+            background: #757373;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #escritas {
+            margin-top: -50px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+        #imagem {
+            margin-top: 80px;
+        }
+    }

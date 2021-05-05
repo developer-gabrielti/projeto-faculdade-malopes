@@ -1,0 +1,195 @@
+.barra-superior {
+    /* border: 3px solid red; */
+    color: white;
+    display: flex;
+}
+
+.itens {
+    width: calc(100% / 3);
+    padding: 35px;
+    margin-left: 60px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.links {
+    text-align: center;
+}
+
+.link1 a {
+    float: right;
+}
+
+.container {
+    text-align: center;
+}
+
+.div-gerencie-container {
+    margin-top: 10%;
+    margin-right: 60%;
+}
+
+.imgTarefa {
+    position: relative;
+    width: 300;
+    height: 300;
+}
+
+.div-notoriedade-container {
+    margin-top: 1%;
+    margin-left: 60%;
+}
+
+.div-central-container {
+    margin-top: 10%;
+    padding-bottom: 400px;
+}
+
+.div-central-container>h1 {
+    margin-bottom: 100px;
+}
+
+.div-card-container {
+    padding-bottom: 100px;
+}
+
+.div-card-container>h1 {
+    padding-bottom: 100px;
+}
+
+.cardGratis {
+    display: inline-block;
+    background-color: black;
+    padding: 50px 50px 200px 100px;
+    border-radius: 10px;
+    color: white;
+}
+
+.cardPro {
+    display: inline-block;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+@media(max-width: 600px) {
+    .barra-superior {
+        /* border: 3px solid red; */
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .itens {
+        width: 100%;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .link1 a {
+        float: none;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.centerImg p {
+    padding-bottom: 20px;
+}
+
+.imgText {
+    background-image: url('../img/Mexendo-no-pc.png');
+    background-size: 100%;
+    height: 811px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.imgTextCenter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.planos {
+    text-align: center;
+}
+
+.planos h1 {
+    padding: 100px 0 36px 0;
+}
+
+.cardCenter {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 123px;
+}
+
+.card {
+    width: 375px;
+    height: 510px;
+    border-radius: 20px;
+    background-color: #000;
+    display: grid;
+    grid-template-rows: 1fr 85px;
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardTitle h2 {
+    font-size: 36px;
+    color: white;
+    margin: 50px 0 23px 0;
+}
+
+.cardTitle p {
+    font-size: 16px;
+    color: white;
+    padding: 0 80px;
+}
+
+.cardBtn {
+    text-align: center;
+}
+
+.cardBtn a {
+    padding: 16px 90px;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    max-width: 1166px;
+    background-color: #000;
+    height: 300px;
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}

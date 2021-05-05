@@ -1,0 +1,115 @@
+.flex-conteiner {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    height: 150px;
+    align-items: center;
+	padding: 50px;
+}
+
+.user {
+    margin-right: 200px;
+
+} 
+.texto {
+    margin-top: 150px;
+    margin-left: 25px;
+     
+  }
+
+  .funcionalidades {
+	  
+  }
+
+button {
+	background: #000000;
+	color: white;
+	padding:10px;
+	position: center;
+	margin-left: 100px;
+	border-radius: 12px;
+	width: 220px;
+    height: 180px;
+	cursor:pointer;
+	font-weight: bold;
+	font-family:'Open Sans', sans-serif;
+	border: 2px solid white;
+    outline:none;
+
+}
+
+.chat {
+	background: #000000;
+	color: white;
+	position: center;
+	margin-left: 1000px;
+	border-radius: 35px;
+	width: 250px;
+	height: 45px;
+	cursor:pointer;
+	font-weight: bold;
+	font-family:'Open Sans', sans-serif;
+	border: 2px solid white;
+    outline:none;
+	margin-top: 180px;
+}
+
+.opcao1 {
+	background: #000;
+	color: white;
+	margin-right: center;
+	border-radius: 12px;
+	height: 50px;
+	cursor:pointer;
+	font-size: 10px;
+	border: 1px solid black;
+    outline:none;
+}
+
+.opcao2 {
+	background: #000;
+	color: white;
+	margin-right: center;
+	border-radius: 12px;
+	height: 50px;
+	cursor:pointer;
+	font-size: 10px;
+	border: 1px solid black;
+    outline:none;
+}
+
+.opcao3 {
+	background: #000;
+	color: white;
+	margin-right: center;
+	border-radius: 12px;
+	height: 50px;
+	cursor:pointer;
+	font-size: 10px;
+	border: 1px solid black;
+    outline:none;
+}
+
+.opcao4 {
+	background: #000;
+	color: white;
+	margin-right: center;
+	border-radius: 12px;
+	height: 50px;
+	cursor:pointer;
+	font-size: 10px;
+	border: 1px solid black;
+    outline:none;
+}
+
+.opcao5 {
+	background: #000;
+	color: white;
+	margin-right: center;
+	border-radius: 12px;
+	width: 140px;
+	cursor:pointer;
+	font-size: 12px;
+	border: 1px solid black;
+    outline:none;
+}

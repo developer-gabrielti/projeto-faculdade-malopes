@@ -1,0 +1,155 @@
+.conteiner {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+} 
+
+.menu { 
+   display: flex;
+   text-align: center;
+   margin-top: 150px;
+   margin-left:  600px;
+   justify-content: space-between;
+
+}
+
+.busca {
+	margin-top: 150px;
+
+} 
+
+input {
+    margin-top: 100px;
+    height: 32px;
+}
+
+button {
+	background: #000000;
+	color: white;
+	padding:10px;
+	position: center;
+	margin-left: 15px;
+	border-radius: 12px;
+	width:220px;
+    height: 50px;
+	cursor:pointer;
+	font-weight: bold;
+	font-family:'Open Sans', sans-serif;
+	border: 2px solid white;
+    outline:none;
+}
+
+.categorias {
+    margin-left: 400px;
+    border: 200px;
+    padding: 25px;
+    
+  }
+.texto {
+    margin-left: 150px;
+    font-size: 25px;
+}
+
+.texto1 {
+    margin-left: 150px;
+    margin-top: 35px;
+}
+
+.texto2 {
+    margin-left: 485px; 
+    font-size: 25px;
+    margin-top: -115px;
+   
+}
+
+.texto3 {
+    margin-left: 550px;
+}
+
+.solicitação {
+    background: #000000;
+	color: white;
+	padding:10px;
+	position: center;
+	margin-left: 520px;
+	border-radius: 12px;
+	width:220px;
+    height: 40px;
+	cursor:pointer;
+	font-weight: bold;
+	font-family:'Open Sans', sans-serif;
+	border: 2px solid white;
+    outline:none;
+    margin-top: -5px;
+
+}
+ 
+.solicitação1 {
+    height: 40px;
+    margin-left: 170px;
+}
+
+.categorias1 {
+    margin-left: 400px;
+    border: 200px;
+    padding: 25px;
+    
+  }
+
+  .texto4 {
+    margin-left: 165px;
+    font-size: 25px;
+  }
+
+.texto5 {
+    margin-left: 149px; 
+    margin-top: -5px;
+   
+}
+
+.solicitação2 {
+    height: 40px;
+    margin-left: 520px;
+    margin-top: -250px;
+
+}
+ 
+.texto6 {
+    margin-left: 550px;
+    font-size: 25px;
+    margin-top: -80px;
+}
+
+
+.texto7 {
+    margin-left: 550px;
+    margin-top: -10px;
+
+}
+
+.solicitação3 {
+    height: 40px;
+    margin-left: 170px;
+
+
+}
+   
+#opções {
+    margin-top: -1050px;
+   
+
+}
+
+#comentários {
+   
+}
+
+.feedback {
+    border-radius: 20px;
+	background-color: white;
+    width: 250px;
+    height: 230px;
+    margin-top: -80px;
+}

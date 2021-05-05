@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Marmelad;
+    src: url(../fonts/Marmelad-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Marmelad;
+}
+
+
+/* .barra-superior {
+    width: 100vw;
+    height: 50vh;
+} */
+
+.img-barra {
+    height: 430px;
+    background-position: center;
+    background-image: url("../img/Header.png");
+    background-repeat: no-repeat;
+}

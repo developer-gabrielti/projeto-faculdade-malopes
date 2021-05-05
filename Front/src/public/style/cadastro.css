@@ -1,0 +1,91 @@
+head {
+    background: black;
+}
+body {
+    text-align: left;
+    background: #000000;
+    max-width: 100;
+    
+
+}
+.posi {
+    margin-left: 410px;
+    color: white;
+   
+}
+.posi2{
+    float: right;
+	display: inline-block;
+	margin-right: -51px;
+	margin-top: -290px
+   
+}
+.posi3{
+    margin-left: 100px;
+    display: inline-block;
+}
+.posi4{
+    color: white;
+}
+.posição {
+    float: right;
+	display: inline-block;
+    margin-right: -320px;
+	margin-top: -350px
+   
+}
+.logo {
+   padding: 20px 400px ;
+  
+}
+
+label {
+    padding: 100px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+
+#escrita {
+   
+    padding: 100px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+}
+input{
+    border-radius: 20px;
+    border: none;
+    padding: 2px;
+    margin-left: -30px;
+
+    
+ 
+}
+
+.card {
+
+    position: absolute;
+    width: 1000px;
+    height: 450px;
+    left: 150px;
+    top: 140px;
+    background: #C2BDBD;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    display: inline-block;
+   
+  
+}
+
+button {
+    position:absolute;
+    width: 150px;
+    height: 50px;
+    left: 400px;
+    top: 350px;
+    background: #585858;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    border-radius: 20px;
+    color: white;
+}
