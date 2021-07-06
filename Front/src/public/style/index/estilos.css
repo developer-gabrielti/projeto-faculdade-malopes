@@ -111,7 +111,9 @@
 }
 
 .imgText {
-    background-image: url('../img/Mexendo-no-pc.png');
+    
+    background-image: url('../../img/Mexendo-no-pc.png');
+    background-repeat: no-repeat;
     background-size: 100%;
     height: 811px;
     display: flex;
@@ -165,6 +167,8 @@
 }
 
 .cardTitle p {
+    margin-top: 10px;
+    text-align: center;
     font-size: 16px;
     color: white;
     padding: 0 80px;
@@ -192,4 +196,41 @@ footer {
 .footer {
     display: flex;
     justify-content: space-around;
+}
+
+.footerMapa {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footerMapa > a {
+    font-size: 18px;
+    color: white;
+    
+    margin-top: 30px;
+    display: block;
+    
+}
+
+.footerContato {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footerContato > h5 {
+    margin-top: 20px;
+    color: white;
+}
+
+.footerSocial {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footerSocial > a {
+    margin-top: 30px;
+    display: block;
 }

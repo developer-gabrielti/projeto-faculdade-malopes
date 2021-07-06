@@ -2,12 +2,18 @@ const express = require('express');
 const routes = express.Router();
 
 const UsuarioController = require('../controller/UsuarioController');
+const EmpresaController = require('../controller/EmpresaController');
+const ServicoController = require('../controller/ServicoController');
 
-routes.get('/', (req, res) => {
-    return res.json({ hello: "World" })
-})
+routes.post('/cadastrarUsuarios', UsuarioController.cadastro);
+routes.post('/loginUsuario', UsuarioController.login);
 
-routes.post('/cadastro', UsuarioController.cadastro);
-routes.post('/login', UsuarioController.login);
+routes.post('/loginEmpresa', EmpresaController.login);
+routes.post('/cadastrarEmpresas', EmpresaController.cadastro);
+routes.get('/listarEmpresas', EmpresaController.listar)
+
+routes.post('/empresa/:empresaId/cadastrarServicos', ServicoController.cadastro);
+routes.get('/servico/listarServicos', ServicoController.listar);
+
 
 module.exports = routes;

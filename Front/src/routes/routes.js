@@ -1,7 +1,9 @@
 const variaveis = {
 
-    profissional: "/Front/src/views/profissional.html"
-
+    login: "/Front/src/views/newLogin.html",
+    cadastro: "/Front/src/views/newCadastro.html",
+    profissional: "/Front/src/views/newProfissional.html",
+    cliente: "/Front/src/views/newCliente.html"
 }
 
 function irPara(route) {

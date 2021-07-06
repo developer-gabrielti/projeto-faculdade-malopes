@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Cadastro - Serviços UAU ::</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../public/style/cadastro/cadastro.css">
+
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <h1 class="text-center mt-5">Cadastro</h1>
+        <p class="lead text-center">Informe qual será a pessoa cadastrada</p>
+        <p class="lead text-center">Logo após insira os dados corretamente para realizar o cadastro</p>
+        <div class="d-flex justify-content-center">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioCliente" checked>
+                <label class="form-check-label" for="radioCliente">Cliente</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioEmpresa">
+                <label class="form-check-label" for="radioEmpresa">Empresa</label>
+            </div>
+        </div>
+        <div id="formCliente" class="row g-3 mt-5 hide">
+            <h2>Dados Cliente</h2>
+            <div class="col-sm-9">
+                <label for="inputNomeCliente" class="form-label">Nome completo</label>
+                <input type="text" class="form-control" id="inputNomeCliente" placeholder="EX: João da Silva"
+                    required="">
+            </div>
+            <div class="col-sm-3">
+                <label for="inputCPF" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="inputCPF" maxlength="11" placeholder="111.222.333.444-55"
+                    required="">
+            </div>
+            <div class="col-9">
+                <label for="inputEmailCliente" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmailCliente" placeholder="nome@nome.com.br"
+                    required="">
+            </div>
+            <div class="col-3">
+                <label for="inputCelularCliente" class="form-label">Num Celular</label>
+                <input type="email" class="form-control" id="inputCelularCliente" placeholder="34 9 0000-0000"
+                    required="">
+            </div>
+            <div class="col-md-3">
+                <label for="inputCEPCliente" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="inputCEPCliente" placeholder="11.222-345" required="">
+            </div>
+            <div class="col-md-3">
+                <label for="inputCidadeCliente" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCidadeCliente" placeholder="Uberlândia" required="">
+            </div>
+            <div class="col-md-3">
+                <label for="inputBairroCliente" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="inputBairroCliente" placeholder="Santa Monica" required="">
+            </div>
+            <div class="col-md-3">
+                <label for="inputEstadoCliente" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="inputEstadoCliente" maxlength="2" placeholder="Minas Gerais"
+                    required="">
+            </div>
+            <div class="col-12">
+                <label for="inputEnderecoCliente" class="form-label">Endereco</label>
+                <input type="text" class="form-control" id="inputEnderecoCliente" placeholder="Ex: Rua Europa n1644"
+                    required="">
+            </div>
+            <div class="col-6">
+                <label for="inputSenhaCliente" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputSenhaCliente" required="">
+            </div>
+            <div class="col-6">
+                <label for="inputConfSenhaCliente" class="form-label">Confirmar Senha</label>
+                <input type="password" class="form-control" id="inputConfSenhaCliente" required="">
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <input class="btn btn-dark" type="button" id="btnVoltar" value="Voltar" />
+                <input class="btn btn-dark me-md-2" type="button" id="btnCadastroCliente" value="Cadastrar" />
+            </div>
+        </div>
+        <div id="formEmpresa" class="row g-3 mt-5 hide">
+            <h2>Dados Empresa</h2>
+            <div class="col-sm-9">
+                <label for="inputNomeEmpresa" class="form-label">Razão Social</label>
+                <input type="text" class="form-control" id="inputNomeEmpresa" placeholder="EX: InfoTech LTDA"
+                    required="">
+            </div>
+            <div class="col-sm-3">
+                <label for="inputCNPJ" class="form-label">CNPJ</label>
+                <input type="text" class="form-control" id="inputCNPJ" maxlength="14" placeholder="11.222.333/0001-55" required="">
+            </div>
+            <div class="col-9">
+                <label for="inputEmailEmpresa" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmailEmpresa" placeholder="nome@nome.com.br"
+                    required="">
+            </div>
+            <div class="col-3">
+                <label for="inputNumCelularEmpresa" class="form-label">Num Celular</label>
+                <input type="email" class="form-control" id="inputNumCelularEmpresa" placeholder="34 9 0000-0000"
+                    required="">
+            </div>
+            <div class="col-md-3">
+                <label for="inputCEPEmpresa" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="inputCEPempresa" placeholder="11.222-345" required="">
+            </div>
+            <div class="col-md-3">
+                <label for="inputCidadeEmpresa" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCidadeEmpresa" placeholder="Uberlândia" required="">
+            </div>
+            <div class="col-md-3">
+                <label for="inputBairroEmpresa" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="inputBairroEmpresa" placeholder="Santa Monica" required="">
+            </div>
+            <div class="col-md-3">
+                <label for="inputEstadoEmpresa" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="inputEstadoEmpresa" placeholder="Minas Gerais" required="">
+            </div>
+            <div class="col-12">
+                <label for="inputEnderecoEmpresa" class="form-label">Endereco</label>
+                <input type="text" class="form-control" id="inputEnderecoEmpresa" placeholder="Ex: Rua Europa n1644"
+                    required="">
+            </div>
+            <div class="col-6">
+                <label for="inputSenhaEmpresa" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputSenhaEmpresa" required="">
+            </div>
+            <div class="col-6">
+                <label for="inputConfSenhaEmpresa" class="form-label">Confirmar Senha</label>
+                <input type="password" class="form-control" id="inputConfSenhaEmpresa" required="">
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <input class="btn btn-dark" type="button" id="btnVoltarEmpresa" value="Voltar" />
+                <input class="btn btn-dark me-md-2" type="button" id="btnCadastrarEmpresa" value="Cadastrar" />
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="module" src="/Front/src/js/autenticacao/cadastroCliente.js"></script>
+<script type="module" src="/Front/src/js/autenticacao/cadastroEmpresa.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</html>

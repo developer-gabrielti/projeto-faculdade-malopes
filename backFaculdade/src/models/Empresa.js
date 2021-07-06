@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 
-class Usuario extends Model {
+class Empresa extends Model {
     static init(sequelize) {
         super.init({
-            nome: DataTypes.STRING,
-            cpf: DataTypes.STRING,
+            razaoSocial: DataTypes.STRING,
+            cnpj: DataTypes.STRING,
             email: DataTypes.STRING,
             celular: DataTypes.STRING,
             endereco: DataTypes.STRING,
@@ -15,10 +15,14 @@ class Usuario extends Model {
             senha: DataTypes.STRING,
         }, {
             sequelize,
-            tableName: 'usuarios',
+            tableName: 'empresas',
             timestamps: true,
         })
     }
+
+    static associate(models) {
+        this.belongsToMany(models.Servico, { foreignKey: 'empresaId', through: 'empresaServicos', as: 'servicos' })
+    }
 }
 
-module.exports = Usuario;
+module.exports = Empresa;

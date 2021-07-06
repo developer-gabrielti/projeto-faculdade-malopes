@@ -1,12 +1,12 @@
-export class UsuarioModel {
+export class EmpresaModel {
     constructor(obj) {
         obj = obj || {};
 
         // Campos database
-        this.nome = obj.nome;
-        this.cpf = obj.cpf;
+        this.razaoSocial = obj.razaoSocial;
+        this.cnpj = obj.cnpj;
         this.email = obj.email;
-        this.celular = obj.email;
+        this.celular = obj.celular;
         this.endereco = obj.endereco;
         this.cidade = obj.cidade;
         this.estado = obj.estado;
@@ -20,7 +20,7 @@ export class UsuarioModel {
     }
 
     camposParaCadastro() {
-        return !!(this.nome && this.cpf && this.email && this.cidade && this.estado && this.bairro && this.cep && this.senha);
+        return !!(this.razaoSocial && this.cnpj && this.email && this.cidade && this.estado && this.bairro && this.cep && this.senha);
     }
 
 }

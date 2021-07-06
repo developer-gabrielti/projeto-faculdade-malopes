@@ -4,8 +4,8 @@ import { BaseAPI } from '../base.js';
 function cadastrar(model) {
     return new Promise(async(resolve, reject) => {
         const api = new BaseAPI({
-            method: 'post',
-            url: 'http://localhost:3333/cadastrarUsuarios',
+            method: 'POST',
+            url: 'http://localhost:3333/cadastrarEmpresas',
             data: model,
         });
 
@@ -20,8 +20,8 @@ function cadastrar(model) {
 function login(model) {
     return new Promise(async(resolve, reject) => {
         const api = new BaseAPI({
-            method: 'post',
-            url: 'http://localhost:3333/loginUsuario',
+            method: 'POST',
+            url: 'http://localhost:3333/loginEmpresa',
             data: model,
         });
 

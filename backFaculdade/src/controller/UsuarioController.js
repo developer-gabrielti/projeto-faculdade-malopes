@@ -29,7 +29,14 @@ module.exports = {
                 if (!usuarioEncontrado) {
                     await Usuario.create({
                         nome: usuarioDTO.nome,
+                        cpf: usuarioDTO.cpf,
                         email: usuarioDTO.email,
+                        celular: usuarioDTO.celular,
+                        endereco: usuarioDTO.endereco,
+                        cidade: usuarioDTO.cidade,
+                        estado: usuarioDTO.estado,
+                        bairro: usuarioDTO.bairro,
+                        cep: usuarioDTO.cep,
                         senha: hash.trim(),
                     }).then(async usuarioCriado => {
                         if (usuarioCriado) {
@@ -41,7 +48,7 @@ module.exports = {
                             } else response = responses.build(500, 'Falha ao cadastrar usuário');
                         } else response = responses.build(500, 'Falha ao cadastrar usuário');
                     });
-                } else response = responses.build(400, 'Esse usuário já está cadastrado', usuarioEncontrado);
+                } else response = responses.build(400, 'Esse usuário já está cadastrado');
             } else response = responses.getDefault(400);
             return res.json(response);
         } catch (err) {
@@ -67,7 +74,7 @@ module.exports = {
                     const hash = usuarioEncontrado.senha.trim();
 
                     let checkPasswordPromise = new Promise(async resolve => {
-                        await bcrypt.compare(usuarioDTO.senha, hash, async function(err, res) {
+                        await bcrypt.compare(usuarioDTO.senha, hash, async function (err, res) {
                             if (err) resolve(responses.build(500, 'Falha ao fazer login'));
                             else {
                                 if (res) {
@@ -80,7 +87,6 @@ module.exports = {
                                     });
 
                                     resolve(responses.build(200, 'Login efetuado com sucesso', [{
-                                        usuario: usuarioEncontrado,
                                         token,
                                         auth: token ? true : false
                                     }]));

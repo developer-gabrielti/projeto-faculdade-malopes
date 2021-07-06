@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Cliente - ServiçoUAU ::</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/style/cliente/cliente.css">
+</head>
+
+<body class="bg-light">
+    <header class="p-3 mb-3 border-bottom bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-white">Serviços UAU</a></li>
+                </ul>
+
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block text-white text-decoration-none dropdown-toggle" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" class="rounded-circle" width="32" height="32">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5 justify-content-center">
+                <h1>Filtro</h1>
+                <div class="col-3">
+                    <select class="form-select" aria-label="select">
+                        <option selected disabled hidden value="">Região</option>
+                        <option value="1">Uberlândia</option>
+                        <option value="2">Uberaba</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <select class="form-select" aria-label="select">
+                        <option selected disabled hidden value="">Serviço</option>
+                        <option value="1">Informática</option>
+                        <option value="2">Desenvolvimento de Software</option>
+                        <option value="3">Babá</option>
+                        <option value="4">Professor de Ingles</option>
+                        <option value="5">Eletricista</option>
+                        <option value="6">Mecanico</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-grid gap-2 col-2 mx-auto">
+                    <input class="btn btn-dark" type="input" value="Buscar" />
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="cards-servico">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="lead">Pagina desenvolvida por Serviços UAU</p>
+
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="module" src="../js/painelCliente/servico.js"></script>
+
+</html>

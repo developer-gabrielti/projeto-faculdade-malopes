@@ -6,5 +6,6 @@ module.exports = {
     database: 'bancouau',
     define: {
         timestamps: true,
+        underscored: false
     },
 };

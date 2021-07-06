@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Serviços UAU - Profissional ::</title>
+
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="btn btn-light px-3 text-dark">Voltar</a></li>
+                </ul>
+
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block text-white text-decoration-none dropdown-toggle" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" class="rounded-circle" width="32" height="32">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container py-3">
+        <h3 class="text-center mb-5">Perfil do prestador</h3>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center justify-content-center">
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cadastrar Serviço prestado</h5>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#modalServicos">Cadastrar</button>
+
+                        <div class="modal fade" id="modalServicos" tabindex="-1" aria-labelledby="modalServicosXL"
+                            style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title h4">Cadastrar serviço</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h4 class="mb-5">Insira as informações para realizar o cadastro do serviço</h4>
+                                        <div class="row g-3">
+                                            <div class="col-sm-6">
+                                                <input class="form-control" type="text" id="inputServicoPrestado"
+                                                    placeholder="Nome do serviço prestado"
+                                                    aria-label="Nome do servico prestado">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input class="form-control" type="text" placeholder="Link para img"
+                                                    id="inputServicoImg" aria-label="link para imagem">
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" type="text" id="inputServicoDescricao"
+                                                    placeholder="Descricao do serviço"
+                                                    aria-label="descricao do servico">
+                                            </div>
+                                        </div>
+                                        <div class="mt-3 d-grid gap-2 d-md-flex justify-content-md-end">
+                                            <input class="btn btn-dark me-md-2" type="button" value="Cadastrar"
+                                                id="btnCadastrarServico" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Horários agendados</h5>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#modalHorarios">Verificar</button>
+
+                        <div class="modal fade" id="modalHorarios" tabindex="-1" aria-labelledby="modalHorariosXL"
+                            style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title h4">Horários agendados</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Nome do cliente</th>
+                                                    <th scope="col">Hora marcada</th>
+                                                    <th scope="col">Numero celular</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Gabriel</td>
+                                                    <td>08:30</td>
+                                                    <td>34 9 98171712</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Serviços realizados</h5>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#modalServRealizados">Mostrar</button>
+
+                        <div class="modal fade" id="modalServRealizados" tabindex="-1"
+                            aria-labelledby="modalServRealizadosXL" style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title h4">Clientes</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h1>teste</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="module" src="../js/painelEmpresa/servico.js"></script>
+
+</html>
